@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding: 20rem;
+}
+
+.fancy-btn button {
+  border: none;
+  background-color: white;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fancy-btn button::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  z-index: -1;
+  border-radius: 10px;
+  background: linear-gradient(270deg, cyan, magenta, cyan);
+  background-size: 600% 600%;
+  animation: rotateGradient 10s linear infinite;
+}
+
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
