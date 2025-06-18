@@ -1,7 +1,8 @@
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 20rem;
+  align-items: center;
 }
 
 .fancy-btn button {
@@ -25,12 +26,11 @@ body {
   left: -3px;
   right: -3px;
   bottom: -3px;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(270deg, cyan, magenta, cyan);
   z-index: -1;
   border-radius: 10px;
-  background: linear-gradient(270deg, cyan, magenta, cyan);
   background-size: 600% 600%;
-  animation: rotateGradient 10s linear infinite;
+  animation: rotateGradient 3s linear infinite;
 }
 
 @keyframes rotateGradient {
